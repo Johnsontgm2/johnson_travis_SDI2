@@ -39,3 +39,14 @@ var averageSpending = totalAmount / 5;
 
 //Display total amount spent on groceries
 console.log("You have spent a total of " + totalAmount + " on groceries over 5 weeks. That is an average of " + averageSpending +"per week");
+
+//Declare Variables
+var originalPrice = 125.99;
+var discountPercent = 10;
+var discountDecimal = discountPercent / 100;
+var itemDescription = "Orlando City Jersey(Long Sleeve)";
+var salesTaxPercent = 6;
+var taxDecimal = salesTaxPercent / 100;
+var calculateTax = originalPrice * taxDecimal;
+var calculateDiscount = originalPrice * discountDecimal;
+

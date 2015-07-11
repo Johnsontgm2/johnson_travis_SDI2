@@ -50,3 +50,21 @@ var taxDecimal = salesTaxPercent / 100;
 var calculateTax = originalPrice * taxDecimal;
 var calculateDiscount = originalPrice * discountDecimal;
 
+//Find price of item with tax
+
+var itemWithTax = originalPrice + calculateTax;
+console.log(itemWithTax);
+
+//price of item with tax with discount
+
+var itemPriceWithDiscount = itemWithTax - calculateDiscount;
+console.log(itemPriceWithDiscount);
+
+//price of item without tax with discount
+
+var priceNoTaxWithDiscount = (originalPrice - calculateDiscount);
+console.log(priceNoTaxWithDiscount);
+
+//Display results
+console.log("Your " + itemDescription + " was originally $" + originalPrice + " after a 10% discount, it is now " + priceNoTaxWithDiscount + " without tax and $" + itemPriceWithDiscount + " with tax");
+

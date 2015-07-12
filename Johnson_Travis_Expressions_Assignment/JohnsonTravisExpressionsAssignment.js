@@ -48,4 +48,13 @@ while(FIFASun === "" || isNaN(FIFASun)){
 
 //Take data from user and enter into an array
 var FIFAGamesPlayed = [0];
+FIFAGamesPlayed[0]=parseInt(FIFAMon);
+FIFAGamesPlayed[1]=parseInt(FIFATue);
+FIFAGamesPlayed[2]=parseInt(FIFAWed);
+FIFAGamesPlayed[3]=parseInt(FIFAThur);
+FIFAGamesPlayed[4]=parseInt(FIFAFri);
+FIFAGamesPlayed[5]=parseInt(FIFASat);
+FIFAGamesPlayed[6]=parseInt(FIFASun);
 
+//Display to user what was entered for games played per day
+console.log(" Monday games played " + FIFAGamesPlayed[0] + " \n Tuesday games played " + FIFAGamesPlayed[1] + " \n Wednesday games played " + FIFAGamesPlayed[2] + "\n Thursday games played " + FIFAGamesPlayed[3] + "\n Friday games played " + FIFAGamesPlayed[4] + "\n Saturday games played " + FIFAGamesPlayed[5] + "\n Sunday games played " + FIFAGamesPlayed[6]);

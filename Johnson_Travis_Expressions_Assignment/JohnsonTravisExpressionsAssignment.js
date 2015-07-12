@@ -59,8 +59,32 @@ FIFAGamesPlayed[6]=parseInt(FIFASun);
 //Display to user what was entered for games played per day
 console.log(" Monday games played " + FIFAGamesPlayed[0] + " \n Tuesday games played " + FIFAGamesPlayed[1] + " \n Wednesday games played " + FIFAGamesPlayed[2] + "\n Thursday games played " + FIFAGamesPlayed[3] + "\n Friday games played " + FIFAGamesPlayed[4] + "\n Saturday games played " + FIFAGamesPlayed[5] + "\n Sunday games played " + FIFAGamesPlayed[6]);
 
-//Find average number of games per week using array
+//Find average number of games per week using array and display
 var FIFAGamesPerWeek = FIFAGamesPlayed[0] + FIFAGamesPlayed[1] + FIFAGamesPlayed[2] + FIFAGamesPlayed[3] + FIFAGamesPlayed[4] + FIFAGamesPlayed[5] + FIFAGamesPlayed[6];
-var AverageFIFAGamesPerWeek = FIFAGamesPerWeek /= 7
+console.log("You played " + FIFAGamesPerWeek + " FIFA games this week");
+
+//Find out average numbers of hours played per week (Normal settings is 15 minute games)
+var HoursPlayed = FIFAGamesPerWeek * 15 / 60;
+console.log("The number of hours you spent playing FIFA this Week is " + HoursPlayed);
+
+var AverageFIFAGamesPerWeek = FIFAGamesPerWeek /= 7;
 //display games played that week
-console.log("You played " + FIFAGamesPerWeek + " FIFA games this week" + "\n With an average of " + AverageFIFAGamesPerWeek + " Games played per day.");
+console.log("You averaged " + AverageFIFAGamesPerWeek + " FIFA games per day this week");
+
+/*
+Test calculator
+Tested prompts for blanks and not a number
+Entered 2 for each day
+Displayed each day as 2
+Total of 14 games
+Average of 2 games per day
+Returned 3.5 hours played Each game on standard settings is 15 minutes
+Entered 3 for each fay
+Displayed each day as 3
+Total of 21 games
+Average of 3 games per day
+Returned 5.25 hours played
+ */
+
+
+

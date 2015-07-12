@@ -14,7 +14,7 @@ Expressions Assignment
 //This calculator will tell you the average number of FIFA games per week and average hours played per day
 
 //Tell user what calculator is for
-alert("This calculator will tell you the average number of FIFA games played per week, and average hours played per day with the game on  default game time settings");
+alert("This calculator will tell you the average number of FIFA games played per day, and average hours played per day with the game on  default game time settings");
 
 //Prompt user for games played per day, and match times to figure our hours played, each prompt will be validated
 var FIFAMon = prompt("How many games of FIFA did you play on Monday?");
@@ -58,3 +58,9 @@ FIFAGamesPlayed[6]=parseInt(FIFASun);
 
 //Display to user what was entered for games played per day
 console.log(" Monday games played " + FIFAGamesPlayed[0] + " \n Tuesday games played " + FIFAGamesPlayed[1] + " \n Wednesday games played " + FIFAGamesPlayed[2] + "\n Thursday games played " + FIFAGamesPlayed[3] + "\n Friday games played " + FIFAGamesPlayed[4] + "\n Saturday games played " + FIFAGamesPlayed[5] + "\n Sunday games played " + FIFAGamesPlayed[6]);
+
+//Find average number of games per week using array
+var FIFAGamesPerWeek = FIFAGamesPlayed[0] + FIFAGamesPlayed[1] + FIFAGamesPlayed[2] + FIFAGamesPlayed[3] + FIFAGamesPlayed[4] + FIFAGamesPlayed[5] + FIFAGamesPlayed[6];
+var AverageFIFAGamesPerWeek = FIFAGamesPerWeek /= 7
+//display games played that week
+console.log("You played " + FIFAGamesPerWeek + " FIFA games this week" + "\n With an average of " + AverageFIFAGamesPerWeek + " Games played per day.");

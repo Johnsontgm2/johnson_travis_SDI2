@@ -14,7 +14,7 @@ Expressions Assignment
 //This calculator will tell you the average number of FIFA games per week and average hours played per day
 
 //Tell user what calculator is for
-alert("This calculator will tell you the average number of FIFA games played per week, and average hours played per day");
+alert("This calculator will tell you the average number of FIFA games played per week, and average hours played per day with the game on  default game time settings");
 
 //Prompt user for games played per day, and match times to figure our hours played, each prompt will be validated
 var FIFAMon = prompt("How many games of FIFA did you play on Monday?");
@@ -45,4 +45,7 @@ var FIFASun = prompt("How many games of FIFA did you play on Sunday?");
 while(FIFASun === "" || isNaN(FIFASun)){
     FIFASun = prompt("Please do not leave blank and only enter a number.If 0 games were played enter 0")
 }
+
+//Take data from user and enter into an array
+var FIFAGamesPlayed = [0];
 

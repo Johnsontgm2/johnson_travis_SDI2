@@ -55,5 +55,5 @@ var TirePressure = [44,43,36,36];
 if(TirePressure[0] === TirePressure[1] && TirePressure[2] === TirePressure[3]){
     console.log("The tires pass spec.")
 
-}else console.log("Tires do not pass spec.");
+}else {console.log("Tires do not pass spec.")};
 

@@ -41,3 +41,17 @@ if(EnterUserName === UserName){
 if(parseInt(EnterPassword) === Password){
 
 }else console.log("Password does not match our records");
+
+if(EnterUserName === UserName && parseInt(EnterPassword) === Password){
+    console.log("Welcome " + UserName )
+}
+
+//Group 3 problem
+//Setup given variables
+var TirePressure = [44,44,36,36];
+
+if(TirePressure[0] === TirePressure[1] && TirePressure[2] === TirePressure[3]){
+    console.log("The tires pass spec.")
+
+}else console.log("Tires do not pass spec.");
+

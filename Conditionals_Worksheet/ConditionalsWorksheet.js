@@ -34,6 +34,7 @@ var Password = 1234;
 var EnterUserName = prompt("Please enter your user name.");
 var EnterPassword = prompt("Please enter your password.");
 
+//if else statements for login
 if(EnterUserName === UserName){
 
 }else console.log("User not found try again.");
@@ -48,8 +49,9 @@ if(EnterUserName === UserName && parseInt(EnterPassword) === Password){
 
 //Group 3 problem
 //Setup given variables
-var TirePressure = [44,44,36,36];
+var TirePressure = [44,43,36,36];
 
+//if else statements for tire pressure
 if(TirePressure[0] === TirePressure[1] && TirePressure[2] === TirePressure[3]){
     console.log("The tires pass spec.")
 

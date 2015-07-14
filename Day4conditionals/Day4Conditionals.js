@@ -30,13 +30,16 @@ Day 4 conditionals
 //Relational expressions - operators
  //Test kids height to see if he can ride the ride
 
- var kidHeight = 42;
+ var kidHeight = prompt("How tall are you in inches?");
  var sneakerLift = 2;
 
  //If the child is 48 inches or taller they can ride the ride
  if(kidHeight >= 48){
      //Code inside of here will run if child is 48 inches or taller
      console.log("Congrats, you are tall enough to ride the coaster!");
+
+ } else if(Number(kidHeight) + sneakerLift >= 48){
+     console.log("You can ride the roller coaster with sneakers")
 
  } else{
      console.log("Sorry you are too short to ride the roller coaster.");

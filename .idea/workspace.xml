@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22df18af-7775-4555-8938-19f193020b7f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day4conditionals/logical.js" afterPath="$PROJECT_DIR$/Day4conditionals/logical.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day4conditionals/Day4ternary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day4conditionals/day4_ternary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="johnson_travis_SDI2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,61 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConditionalsWorksheet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.html">
+      <file leaf-file-name="day4_ternary.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day4conditionals/day4_ternary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49141964" vertical-offset="0" max-vertical-offset="641">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logical.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day4conditionals/logical.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25117004" vertical-offset="259" max-vertical-offset="900">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logical.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day4conditionals/logical.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JohnsonTravisExpressionsAssignment.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Johnson_Travis_Expressions_Assignment/JohnsonTravisExpressionsAssignment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1470">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JohnsonTravisLabExpressionsAssignment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Johnson_Travis_Expressions_Assignment/JohnsonTravisLabExpressionsAssignment.html">
+      <file leaf-file-name="Day4ternary.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day4conditionals/Day4ternary.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
               <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConditionalsWorksheet.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="945">
-              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -107,6 +69,9 @@
         <option value="$PROJECT_DIR$/Day4conditionals/Day4Conditionals.js" />
         <option value="$PROJECT_DIR$/Day4conditionals/logical.html" />
         <option value="$PROJECT_DIR$/Day4conditionals/logical.js" />
+        <option value="$PROJECT_DIR$/Day4conditionals/Day4_ternary.html" />
+        <option value="$PROJECT_DIR$/Day4conditionals/Day4ternary.html" />
+        <option value="$PROJECT_DIR$/Day4conditionals/day4_ternary.js" />
       </list>
     </option>
   </component>
@@ -157,6 +122,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="johnson_travis_SDI2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="johnson_travis_SDI2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="johnson_travis_SDI2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Day4conditionals" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,22 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="945">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Johnson_Travis_Expressions_Assignment/JohnsonTravisExpressionsAssignment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="1470">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day4conditionals/Day4Conditionals.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
@@ -359,17 +322,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.html">
+    <entry file="file://$PROJECT_DIR$/Johnson_Travis_Expressions_Assignment/JohnsonTravisExpressionsAssignment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3447738" vertical-offset="769" max-vertical-offset="1470">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day4conditionals/logical.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
+        <state vertical-scroll-proportion="0.1458671" vertical-offset="0" max-vertical-offset="617">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding />
         </state>
@@ -377,8 +340,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day4conditionals/logical.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25117004" vertical-offset="259" max-vertical-offset="900">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.648986" vertical-offset="259" max-vertical-offset="900">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19448946" vertical-offset="0" max-vertical-offset="617">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conditionals_Worksheet/ConditionalsWorksheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81279254" vertical-offset="304" max-vertical-offset="945">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day4conditionals/Day4ternary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day4conditionals/day4_ternary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49141964" vertical-offset="0" max-vertical-offset="641">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding />
         </state>
       </provider>

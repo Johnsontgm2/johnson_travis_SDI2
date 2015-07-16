@@ -20,6 +20,10 @@ For an arrow, the kinetic energy is calculated by taking the weight in grains, m
 alert("This calculator will determine the kinetic energy of your arrow based on its speed and weight is grains, Also this calculator will help you with an estimated bow speed by asking for draw length, arrow weight, and bow string weight.");
 
 //Find bow speed to calculate kinetic energy validate prompts
+var ManufacturerBowSpeed = prompt("What is the manufacturer rated bow speed in feet per second?");
+while(ManufacturerBowSpeed === "" || isNaN(ManufacturerBowSpeed)){
+    ManufacturerBowSpeed = prompt("Please do not leave blank and only enter a number \n What is the manufacturer rated bow speed in feet per second?")
+}
 var DrawLength = prompt("What is your draw length in inches? \n please only enter a number.");
 while(DrawLength === "" || isNaN(DrawLength)){
     DrawLength = prompt("Please do not leave blank and only enter a number. \n What is your draw length in inches?")
@@ -32,6 +36,24 @@ var BowWeight = prompt("What is the weight of the bow string?");
 while(BowWeight === "" || isNaN(BowWeight)){
     BowWeight = prompt("Please do not leave blank and only enter a number \n What is the weight of the bow string?")
 }
+
+//Calculations for draw length affecting manufacturer bow speed
+var AdjustedBowSpeed;
+if(DrawLength === 30){
+    AdjustedBowSpeed = ManufacturerBowSpeed
+
+}else if (DrawLength > 30){
+    var DrawLengthForCalc = (DrawLength - 30) * 10;
+    AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) + parseInt(DrawLengthForCalc)
+} else if(DrawLength < 30){
+    var DrawLengthForCalc = (30 - DrawLength) * 10;
+     AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) - parseInt(DrawLengthForCalc)
+}
+
+//Calculations for total arrow weight affecting manufacturer bow speed
+
+console.log(AdjustedBowSpeed);
+
 
 
 

@@ -36,7 +36,7 @@ while(DrawWeight === "" || isNaN(DrawWeight)){
     DrawWeight = prompt("Please do not leave blank and only enter a number \n What is the draw weight of the bow?")
 }
 
-//Calculations for draw length affecting manufacturer bow speed
+//Calculations for draw length affecting adjusted bow speed
 var AdjustedBowSpeed;
 var DrawLengthForCalc;
 if(parseInt(DrawLength) === 30){
@@ -48,9 +48,8 @@ if(parseInt(DrawLength) === 30){
      DrawLengthForCalc = (30 - DrawLength) * 10;
      AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) - parseInt(DrawLengthForCalc)
 }
-console.log(AdjustedBowSpeed);
 
-//Calculate adjusted bow speed for draw weight
+//Calculate adjusted bow speed with draw weight
 var AdjustedDrawWeight;
 if(parseInt(DrawWeight >= 70)){
     AdjustedDrawWeight = AdjustedBowSpeed
@@ -59,17 +58,25 @@ if(parseInt(DrawWeight >= 70)){
     AdjustedBowSpeed = AdjustedBowSpeed - AdjustedDrawWeight;
 }
 
-//(Condition to test)? true code : false code;
-console.log(AdjustedBowSpeed);
 
-
-
-
-
-
-
+//Calculate adjusted bow speed with total arrow weight
 //Calculations for total arrow weight affecting manufacturer bow speed
 //5 grams per pound of draw weight, if any grams leftover every 3 grams subtracts 1 fps
+//(Condition to test)? true code : false code;
+var AdjustedArrowWeight = TotalArrowWeight / 5;
+var ArrowWeightForCalc;
+(AdjustedArrowWeight > DrawWeight) ? ArrowWeightForCalc = (AdjustedArrowWeight - DrawWeight) / 3 :ArrowWeightForCalc = AdjustedBowSpeed;
+
+//Display bow speed to user
+console.log("Your estimated bow speed is " + AdjustedBowSpeed + "FPS");
+
+
+
+
+
+
+
+
 
 
 

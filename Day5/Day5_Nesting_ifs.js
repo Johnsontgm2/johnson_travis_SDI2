@@ -35,7 +35,7 @@ if(temp >= 80){
 
     //validate kids prompt
     //expecting yes or no
-    if(){
+
 
     }
     //Ask if kids are going with

@@ -13,11 +13,10 @@ Conditionals Assignment
 
 /*
 This calculator will determine the kinetic energy of your arrow based on its speed and weight in grains
-For an arrow, the kinetic energy is calculated by taking the weight in grains, multiplying it by the square of the speed in feet per second, and dividing by the constant 450800. This calculator will also help you determine an estimated bow speed by calculating draw length, arrow weight in grains and bow string weight.Adjustments:For every inch of draw length under 30″, subtract 10 fps, every inch over 30″ add 10 fps.For every 3 grains of total arrow weight above 5 grains per pound of draw weight, subtract 1 fps.For every 3 grains of weight on the bow string, subtract 1 fps. Bow ratings are done at 70 lbs but quite often they are shot at 60 lbs.  This will usually result in the bow performing at 3-4 fps slower, assuming that the arrow remains at 5 grains per pound draw weight.
+For an arrow, the kinetic energy is calculated by taking the weight in grains, multiplying it by the square of the speed in feet per second, and dividing by the constant 450800. This calculator will also help you determine an estimated bow speed by calculating draw length, arrow weight in grains and bow string weight.Adjustments:For every inch of draw length under 30″, subtract 10 fps, every inch over 30″ add 10 fps.For every 3 grains of total arrow weight above 5 grains per pound of draw weight, subtract 1 fps. Bow ratings are done at 70 lbs but quite often they are shot at 60 lbs.  This will usually result in the bow performing at 3-4 fps slower, assuming that the arrow remains at 5 grains per pound draw weight.
  */
-
 //Tell user what calculator is for
-alert("This calculator will determine the kinetic energy of your arrow based on its speed and weight is grains, Also this calculator will help you with an estimated bow speed by asking for draw length, arrow weight, and bow string weight.");
+alert(" This calculator will help you with an estimated bow speed by asking for draw length, arrow weight, and draw weight.");
 
 //Find bow speed to calculate kinetic energy validate prompts
 var ManufacturerBowSpeed = prompt("What is the manufacturer rated bow speed in feet per second?");
@@ -32,27 +31,46 @@ var TotalArrowWeight = prompt("What is the total arrow weight in grains");
 while(TotalArrowWeight === "" || isNaN(TotalArrowWeight)){
     TotalArrowWeight = prompt("Please do not leave blank and only enter a number \n What is the total arrow weight in grains?")
 }
-var BowWeight = prompt("What is the weight of the bow string?");
-while(BowWeight === "" || isNaN(BowWeight)){
-    BowWeight = prompt("Please do not leave blank and only enter a number \n What is the weight of the bow string?")
+var DrawWeight = prompt("What is the draw weight of the bow?");
+while(DrawWeight === "" || isNaN(DrawWeight)){
+    DrawWeight = prompt("Please do not leave blank and only enter a number \n What is the draw weight of the bow?")
 }
 
 //Calculations for draw length affecting manufacturer bow speed
 var AdjustedBowSpeed;
-if(DrawLength === 30){
+var DrawLengthForCalc;
+if(parseInt(DrawLength) === 30){
     AdjustedBowSpeed = ManufacturerBowSpeed
-
 }else if (DrawLength > 30){
-    var DrawLengthForCalc = (DrawLength - 30) * 10;
+     DrawLengthForCalc = (DrawLength - 30) * 10;
     AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) + parseInt(DrawLengthForCalc)
 } else if(DrawLength < 30){
-    var DrawLengthForCalc = (30 - DrawLength) * 10;
+     DrawLengthForCalc = (30 - DrawLength) * 10;
      AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) - parseInt(DrawLengthForCalc)
 }
+console.log(AdjustedBowSpeed);
+
+//Calculate adjusted bow speed for draw weight
+var AdjustedDrawWeight;
+if(parseInt(DrawWeight >= 70)){
+    AdjustedDrawWeight = AdjustedBowSpeed
+} else if(DrawWeight < 70){
+    AdjustedDrawWeight = (70 - DrawWeight) / 10 * 4;
+    AdjustedBowSpeed = AdjustedBowSpeed - AdjustedDrawWeight;
+}
+
+//(Condition to test)? true code : false code;
+console.log(AdjustedBowSpeed);
+
+
+
+
+
+
 
 //Calculations for total arrow weight affecting manufacturer bow speed
+//5 grams per pound of draw weight, if any grams leftover every 3 grams subtracts 1 fps
 
-console.log(AdjustedBowSpeed);
 
 
 

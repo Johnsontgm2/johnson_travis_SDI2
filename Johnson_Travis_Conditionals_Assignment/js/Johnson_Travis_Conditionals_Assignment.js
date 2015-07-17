@@ -58,19 +58,37 @@ if(parseInt(DrawWeight >= 70)){
     AdjustedBowSpeed = AdjustedBowSpeed - AdjustedDrawWeight;
 }
 
-
 //Calculate adjusted bow speed with total arrow weight
-//Calculations for total arrow weight affecting manufacturer bow speed
 //5 grams per pound of draw weight, if any grams leftover every 3 grams subtracts 1 fps
 //(Condition to test)? true code : false code;
 var AdjustedArrowWeight = TotalArrowWeight / 5;
-var ArrowWeightForCalc;
-(AdjustedArrowWeight > DrawWeight) ? ArrowWeightForCalc = (AdjustedArrowWeight - DrawWeight) / 3 :ArrowWeightForCalc = AdjustedBowSpeed;
+AdjustedBowSpeed = (AdjustedArrowWeight>DrawWeight) ? (AdjustedArrowWeight - DrawWeight) / 3 + AdjustedBowSpeed : AdjustedBowSpeed;
 
 //Display bow speed to user
 console.log("Your estimated bow speed is " + AdjustedBowSpeed + "FPS");
 
 
+/*
+Test1
+Validated all prompt for "" || isNaN
+ManufacturerBowSpeed = 300
+DrawLength = 30
+DrawWeight = 70
+ArrowWeight = 100
+Returned "Your estimated bow speed is 300FPS" which is correct entered information should not change ManufacturerBowSpeed
+Test2
+ManufacturerBowSpeed = 300
+DrawLength = 27 should subtract 10 for every inch under 30
+DrawWeight = 60 should subtract 4
+ArrowWeight = 450 should add 10FPS
+Returned "Your estimated bow speed is 276FPS" which is correct
+Test3
+ManufacturerBowSpeed = 400
+DrawLength = 31 should add 10
+DrawWeight = 70 should stay the same
+ArrowWeight = 500 should add 10
+Returned "Your estimated bow speed is 420FPS which is correct
+*/
 
 
 
@@ -88,17 +106,4 @@ console.log("Your estimated bow speed is " + AdjustedBowSpeed + "FPS");
 
 
 
-//User prompts for kinetic energy, validate each prompt
-var WeightInGrains = prompt("What is the weight of the arrow head in grains? \n Please only enter a number");
-while(WeightInGrains === "" || isNaN(WeightInGrains)){
-    WeightInGrains = prompt("Please do not leave blank and only enter a number \n Please enter the weight of the arrow head in grains.")
-}
-var ArrowSpeed = prompt("What is the speed of the arrow in feet per second? \n Please only enter a number.");
-while(ArrowSpeed === "" || isNaN(ArrowSpeed)){
-    ArrowSpeed = prompt("Please do not leave blank and only enter number \n Please enter the speed of the arrow is feet per second.")
-}
 
-//Calculation for kinetic energy
-var KineticEnergy = WeightInGrains * ArrowSpeed * ArrowSpeed / 450800;
-
-console.log(KineticEnergy);

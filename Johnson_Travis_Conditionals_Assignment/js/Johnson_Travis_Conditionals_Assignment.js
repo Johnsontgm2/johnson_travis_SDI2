@@ -19,53 +19,53 @@ For an arrow, the kinetic energy is calculated by taking the weight in grains, m
 alert(" This calculator will help you with an estimated bow speed by asking for draw length, arrow weight, and draw weight.");
 
 //Find bow speed to calculate kinetic energy validate prompts
-var ManufacturerBowSpeed = prompt("What is the manufacturer rated bow speed in feet per second?");
-while(ManufacturerBowSpeed === "" || isNaN(ManufacturerBowSpeed)){
-    ManufacturerBowSpeed = prompt("Please do not leave blank and only enter a number \n What is the manufacturer rated bow speed in feet per second?")
+var manufacturerBowSpeed = prompt("What is the manufacturer rated bow speed in feet per second?");
+while(manufacturerBowSpeed === "" || isNaN(manufacturerBowSpeed)){
+    manufacturerBowSpeed = prompt("Please do not leave blank and only enter a number \n What is the manufacturer rated bow speed in feet per second?")
 }
-var DrawLength = prompt("What is your draw length in inches? \n please only enter a number.");
-while(DrawLength === "" || isNaN(DrawLength)){
-    DrawLength = prompt("Please do not leave blank and only enter a number. \n What is your draw length in inches?")
+var drawLength = prompt("What is your draw length in inches? \n please only enter a number.");
+while(drawLength === "" || isNaN(drawLength)){
+    drawLength = prompt("Please do not leave blank and only enter a number. \n What is your draw length in inches?")
 }
-var TotalArrowWeight = prompt("What is the total arrow weight in grains");
-while(TotalArrowWeight === "" || isNaN(TotalArrowWeight)){
-    TotalArrowWeight = prompt("Please do not leave blank and only enter a number \n What is the total arrow weight in grains?")
+var totalArrowWeight = prompt("What is the total arrow weight in grains");
+while(totalArrowWeight === "" || isNaN(totalArrowWeight)){
+    totalArrowWeight = prompt("Please do not leave blank and only enter a number \n What is the total arrow weight in grains?")
 }
-var DrawWeight = prompt("What is the draw weight of the bow?");
-while(DrawWeight === "" || isNaN(DrawWeight)){
-    DrawWeight = prompt("Please do not leave blank and only enter a number \n What is the draw weight of the bow?")
+var drawWeight = prompt("What is the draw weight of the bow?");
+while(drawWeight === "" || isNaN(drawWeight)){
+    drawWeight = prompt("Please do not leave blank and only enter a number \n What is the draw weight of the bow?")
 }
 
 //Calculations for draw length affecting adjusted bow speed
-var AdjustedBowSpeed;
-var DrawLengthForCalc;
-if(parseInt(DrawLength) === 30){
-    AdjustedBowSpeed = ManufacturerBowSpeed
-}else if (DrawLength > 30){
-     DrawLengthForCalc = (DrawLength - 30) * 10;
-    AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) + parseInt(DrawLengthForCalc)
+var adjustedBowSpeed;
+var drawLengthForCalc;
+if(parseInt(drawLength) === 30){
+    adjustedBowSpeed = manufacturerBowSpeed
+}else if (drawLength > 30){
+     drawLengthForCalc = (drawLength - 30) * 10;
+    adjustedBowSpeed = parseInt(manufacturerBowSpeed) + parseInt(drawLengthForCalc)
 } else if(DrawLength < 30){
-     DrawLengthForCalc = (30 - DrawLength) * 10;
-     AdjustedBowSpeed = parseInt(ManufacturerBowSpeed) - parseInt(DrawLengthForCalc)
+     drawLengthForCalc = (30 - DrawLength) * 10;
+     AdjustedBowSpeed = parseInt(manufacturerBowSpeed) - parseInt(drawLengthForCalc)
 }
 
 //Calculate adjusted bow speed with draw weight
-var AdjustedDrawWeight;
-if(parseInt(DrawWeight >= 70)){
-    AdjustedDrawWeight = AdjustedBowSpeed
-} else if(DrawWeight < 70){
-    AdjustedDrawWeight = (70 - DrawWeight) / 10 * 4;
-    AdjustedBowSpeed = AdjustedBowSpeed - AdjustedDrawWeight;
+var adjustedDrawWeight;
+if(parseInt(drawWeight >= 70)){
+    adjustedDrawWeight = adjustedBowSpeed
+} else if(drawWeight < 70){
+    adjustedDrawWeight = (70 - DrawWeight) / 10 * 4;
+    adjustedBowSpeed = adjustedBowSpeed - adjustedDrawWeight;
 }
 
 //Calculate adjusted bow speed with total arrow weight
 //5 grams per pound of draw weight, if any grams leftover every 3 grams subtracts 1 fps
 //(Condition to test)? true code : false code;
-var AdjustedArrowWeight = TotalArrowWeight / 5;
-AdjustedBowSpeed = (AdjustedArrowWeight>DrawWeight) ? (AdjustedArrowWeight - DrawWeight) / 3 + AdjustedBowSpeed : AdjustedBowSpeed;
+var adjustedArrowWeight = totalArrowWeight / 5;
+adjustedBowSpeed = (adjustedArrowWeight > drawWeight) ? (adjustedArrowWeight - drawWeight) / 3 + adjustedBowSpeed : adjustedBowSpeed;
 
 //Display bow speed to user
-console.log("Your estimated bow speed is " + AdjustedBowSpeed + "FPS");
+console.log("Your estimated bow speed is " + adjustedBowSpeed + "FPS");
 
 
 /*

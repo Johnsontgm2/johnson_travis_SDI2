@@ -53,6 +53,6 @@ Day 6 Math
  var areaCircle = radius * radius * Math.PI;
 
  //.tofixed(#) - rounds the number to the number of decimal places that matches the # inside the (). 2 would round to second decimal
- 
+
 
  console.log(areaCircle.toFixed(3));

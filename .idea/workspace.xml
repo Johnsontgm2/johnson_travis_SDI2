@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22df18af-7775-4555-8938-19f193020b7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day6Math/whileLoops.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day6Math/js/whileLoops.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day6Math/js/Day6Math.js" afterPath="$PROJECT_DIR$/Day6Math/js/Day6Math.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day6Math/Day6forLoops.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Day6Math/js/Day6forLoops.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="johnson_travis_SDI2.iws" />
@@ -29,11 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="whileLoops.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="whileLoops.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day6Math/js/whileLoops.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74882996" vertical-offset="0" max-vertical-offset="641">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Day6forLoops.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day6Math/js/Day6forLoops.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44461778" vertical-offset="0" max-vertical-offset="641">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Day6forLoops.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day6Math/Day6forLoops.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -96,6 +115,8 @@
         <option value="$PROJECT_DIR$/Day6Math/js/Day6Math.js" />
         <option value="$PROJECT_DIR$/Day6Math/whileLoops.html" />
         <option value="$PROJECT_DIR$/Day6Math/js/whileLoops.js" />
+        <option value="$PROJECT_DIR$/Day6Math/Day6forLoops.html" />
+        <option value="$PROJECT_DIR$/Day6Math/js/Day6forLoops.js" />
       </list>
     </option>
   </component>
@@ -568,10 +589,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day6Math/Day6forLoops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day6Math/js/whileLoops.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74882996" vertical-offset="0" max-vertical-offset="641">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day6Math/js/Day6forLoops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44461778" vertical-offset="0" max-vertical-offset="641">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding />
         </state>
       </provider>

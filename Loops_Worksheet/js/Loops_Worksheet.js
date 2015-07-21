@@ -42,7 +42,7 @@ Loops Worksheet
      seatNumber = prompt("Please only enter a number and do not leave blank \n What number are you in line?");
 
  }
- 
+
 
  //do while loop for seat numbers still available
  do{

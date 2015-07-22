@@ -21,10 +21,17 @@ scoobyGang.push("Scrappy");
 
 // create for loop to cycle through the array
 for(var i = 0; i < scoobyGang.length; i ++){
+    //Call out scooby and shaggy to get a scooby snack
+    if(scoobyGang[i] === "Scooby Doo" || scoobyGang[i] === "Shaggy"){
+        console.log("Good job " + scoobyGang[i] + " You get a scooby snack");
 
-    //console.log each person
-    console.log("You solved the case " + scoobyGang[i] + "!");
-    console.log(scoobyGang[i]);
+    } else{
+        //console.log each person
+        console.log("You solved the case " + scoobyGang[i] + "!");
+        console.log(scoobyGang[i]);
+    }
+
+    
 
 }
 

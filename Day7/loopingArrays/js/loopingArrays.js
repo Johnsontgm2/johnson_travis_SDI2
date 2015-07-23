@@ -31,7 +31,7 @@ for(var i = 0; i < scoobyGang.length; i ++){
         console.log(scoobyGang[i]);
     }
 
-    
+
 
 }
 

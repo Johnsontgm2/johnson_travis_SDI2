@@ -2,8 +2,8 @@
  /*
 Travis Johnson
 Section 00
-03/07/15
-Day 3 Prompts
+07/23/15
+Day 8 function
  */
 
 

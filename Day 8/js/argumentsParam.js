@@ -20,8 +20,8 @@ Day 8 Arguments and Parameters
  //create a function for area of a retangle
  function calcArea(){
      //create variables
-     var width=10;
-     var height=20;
+     //var width=10;
+     //var height=20;
 
      //calculate the area
      var area = width*height;
@@ -31,4 +31,6 @@ Day 8 Arguments and Parameters
  }
  //call the function
  calcArea();
+ width=50;
+ height=20;
  calcArea();

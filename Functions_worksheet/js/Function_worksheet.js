@@ -23,4 +23,17 @@ Functions Worksheet
      return circumference
  }
 
- 
+ //create variable to catch circumference
+ var results = calcCircumferenceOfCircle(userRadius);
+
+ //console.log results
+ console.log("The circumference of the circle is " + Math.round(results));
+
+ /*
+  Test
+  Prompts Validate
+  Entered 12
+  Returned 75
+  Entered 211
+  Returned 1326
+  */

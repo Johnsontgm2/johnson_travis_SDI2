@@ -17,4 +17,10 @@ Functions Worksheet
      userRadius=prompt("Please do not leave blank and only enter a number \n What is the radius of the circle");
  }
 
+ //create function
+ function calcCircumferenceOfCircle(r){
+     var circumference = 2*Math.PI*r;
+     return circumference
+ }
+
  

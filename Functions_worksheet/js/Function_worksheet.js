@@ -50,6 +50,19 @@ Functions Worksheet
      var death = weight*8.7;
      return death
  }
+ //variable to catch death
+ var murderedByBees = deathByBees(userWeight);
+
+ //console.log
+ console.log("It takes "+Math.round(murderedByBees)+" to kill the victim. ");
+
+ /*
+  Test
+  Entered 200
+  Returned 1740
+  Entered 80
+  Returned 696
+  */
 
 
 

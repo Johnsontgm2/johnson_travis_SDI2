@@ -37,3 +37,30 @@ Functions Worksheet
   Entered 211
   Returned 1326
   */
+
+ //How many bee stings does it take to die
+ //User input for weight
+ var userWeight =parseInt(prompt("This calculator will tell you how many bee stings it will take to kill you based on weight of the victim. Please enter the victims weight"));
+ //Validate
+ while(userWeight === "" || isNaN(userWeight)){
+     userWeight=prompt("Please do not leave blank and only enter a number \n What is the weight of the victim")
+ }
+ function deathByBees(weight){
+     //calculate number of bee stings till death
+     var death = weight*8.7;
+     return death
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -44,11 +44,19 @@ Day 9 random number generator
  var results1 =randomizer(min,max);
  console.log("Your random number is "+results1);
  //15 random numbers to print the console.log
+ var total = 0;
+ //create an array to hold the values
+ var randomArray=[];
  for(var i=0;i<15;i++){
      var tempNum=randomizer(min,max);
+     randomArray[i]=tempNum;
      console.log(tempNum);
+     total+=tempNum;
  }
+ console.log(randomArray);
 
+ //console.log total
+ console.log("The total of 15 random numbers is " + total);
 
 
 
@@ -62,7 +70,7 @@ Day 9 random number generator
  //create the random function
  function randomizer(mn,mx){
      //Generate our random number
-     var randomNum=Math.random()*(mx-mn)+mn;
+     var randomNum=Math.round(Math.random()*(mx-mn)+mn);
      //console.log(randomNum);
      return randomNum;
 

@@ -25,3 +25,19 @@ Day 9 random number generator
 
  //number cast or parseint
  min=Number(min);
+
+ //variable for max
+ var max=prompt("What is the max value?");
+ while((max==="" || isNaN(max) || max<=min)){
+     if(isNaN(max)){
+         max=prompt("Please only enter a number. What is the minimum value?");
+
+     }else if(max<=min && max!=""){
+         max=prompt("Please make sure the max value is greater than the min value of " + min+" Please enter the max value?");
+
+     }else{
+         max=prompt("Please do not leave blank what is the min value?");
+     }
+ }
+
+ //number cast

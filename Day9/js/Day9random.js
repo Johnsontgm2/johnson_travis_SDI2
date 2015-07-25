@@ -8,7 +8,7 @@ Day 9 random number generator
 
 
 //alert("Testing");
-
+//var numpromptsneeded=prompt("") then change i < 15 to i<number of prompts put console logs into array then pull out of array
 
  //create a function that will take in user prompt max and min and return a random number between them
 

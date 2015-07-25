@@ -40,4 +40,30 @@ Day 9 random number generator
      }
  }
 
+ //function call randomizer
+ var results1 =randomizer(min,max);
+ console.log("Your random number is "+results1);
+ //15 random numbers to print the console.log
+ for(var i=0;i<15;i++){
+     var tempNum=randomizer(min,max);
+     console.log(tempNum);
+ }
+
+
+
+
+
+
+
+
  //number cast
+ max=Number(max);
+
+ //create the random function
+ function randomizer(mn,mx){
+     //Generate our random number
+     var randomNum=Math.random()*(mx-mn)+mn;
+     //console.log(randomNum);
+     return randomNum;
+
+ }

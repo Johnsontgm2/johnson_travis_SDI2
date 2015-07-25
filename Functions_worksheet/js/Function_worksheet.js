@@ -27,7 +27,7 @@ Functions Worksheet
  var results = calcCircumferenceOfCircle(userRadius);
 
  //console.log results
- console.log("The circumference of the circle is " + Math.round(results));
+ console.log("The circumference of the circle is " + results);
 
  /*
   Test
@@ -54,7 +54,7 @@ Functions Worksheet
  var murderedByBees = deathByBees(userWeight);
 
  //console.log
- console.log("It takes "+Math.round(murderedByBees)+" to kill the victim. ");
+ console.log("It takes "+Math.round(murderedByBees)+" stings to kill the victim. ");
 
  /*
   Test

@@ -55,8 +55,13 @@ arrowLength=Number(arrowLength);
  //number cast
  arrowHeadWeight=Number(arrowHeadWeight);
 
-
-
+//create function to calculate total arrow weight
+ function arrowWeightTotal(al,aw,ahw){
+     var weightOfArrow=(al*aw)+ahw;
+     return weightOfArrow
+ }
+//variable to catch total arrow weight
+ var finalArrowWeight =arrowWeightTotal(arrowLength,arrowWeight,arrowHeadWeight);
 
 
 

@@ -76,7 +76,7 @@ arrowLength=Number(arrowLength);
  var finalArrowWeight =arrowWeightTotal(arrowLength,arrowWeight,arrowHeadWeight);
 
  //Let user know total arrow weight
- console.log("The total weight of your arrow is "+finalArrowWeight+" grains");
+ console.log("The total weight of your arrow is "+finalArrowWeight+" grams");
 
  //create anon function to find the kinetic energy of your arrow hitting a target
  var calcVelocity = function(weight,speed,constant){
@@ -89,7 +89,24 @@ arrowLength=Number(arrowLength);
  var finalVelocity=calcVelocity(finalArrowWeight,manufactBowspeed,450800);
 
  //let user know final answer
- console.log("An arrow with a weight of "+finalArrowWeight+" grams, and using a bow with a speed of "+manufactBowspeed+" Gives you an arrow with the velocity of "+finalVelocity);
+ console.log("An arrow with a weight of "+finalArrowWeight+" grams, and using a bow with a speed of "+manufactBowspeed+" FPS Gives you an arrow with the velocity of "+finalVelocity+" ft pounds");
+
+ /*
+ all prompts validate
+ Entered 28 for arrow length
+ Entered 8 for arrow weight
+ Entered 100 for arrow head weight
+ Entered 300 for manufacturer bow speed
+ Returned 64.6 Ft pounds of force
+ Entered 30 for arrow length
+ Entered 9  for arrow weight
+ Entered 150 for arrow head weight
+ Entered 350 for manufacturer bow speed
+ Returned 114.3 ft pounds
+ Returned
+
+
+  */
 
 
 

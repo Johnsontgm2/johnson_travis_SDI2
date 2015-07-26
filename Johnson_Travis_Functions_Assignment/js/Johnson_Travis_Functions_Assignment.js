@@ -80,10 +80,16 @@ arrowLength=Number(arrowLength);
 
  //create anon function to find the kinetic energy of your arrow hitting a target
  var calcVelocity = function(weight,speed,constant){
-     var velocity=weight*(speed*speed)*constant
+     var velocity=weight*(speed*speed)/constant;
      return velocity
 
- }
+ };
+
+ //call anon function
+ var finalVelocity=calcVelocity(finalArrowWeight,manufactBowspeed,450800);
+
+ //let user know final answer
+ console.log("An arrow with a weight of "+finalArrowWeight+" grams, and using a bow with a speed of "+manufactBowspeed+" Gives you an arrow with the velocity of "+finalVelocity);
 
 
 

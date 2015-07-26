@@ -51,44 +51,53 @@ arrowLength=Number(arrowLength);
          arrowHeadWeight=prompt("Please only enter a number. What is the weight of the arrow head in grams?");
      }
  }
-
  //number cast
  arrowHeadWeight=Number(arrowHeadWeight);
 
-//create function to calculate total arrow weight
- function arrowWeightTotal(al,aw,ahw){
-     var weightOfArrow=(al*aw)+ahw;
-     return weightOfArrow
- }
-//variable to catch total arrow weight
- var finalArrowWeight =arrowWeightTotal(arrowLength,arrowWeight,arrowHeadWeight);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  //prompt for manufacturer bow speed
- var manufactBowspeed=prompt("What is the manufacturer rated speed for your bow?");
+ var manufactBowspeed=prompt("What is the manufacturer rated speed for your bow in FPS?");
  while(manufactBowspeed==="" || isNaN(manufactBowspeed)){
      if(manufactBowspeed===""){
-         manufactBowspeed=prompt("Please do not leave blank. What is the manufacturer rated speed for your bow?");
+         manufactBowspeed=prompt("Please do not leave blank. What is the manufacturer rated speed for your bow in FPS?");
      }else{
-         manufactBowspeed=prompt("Please only enter a number.What is the manufacturer rated speed for your bow?");
+         manufactBowspeed=prompt("Please only enter a number.What is the manufacturer rated speed for your bow in FPS?");
      }
  }
 
  //number cast
  manufactBowspeed=Number(manufactBowspeed);
+
+ //create function to calculate total arrow weight
+ function arrowWeightTotal(al,aw,ahw){
+     var weightOfArrow=(al*aw)+ahw;
+     return weightOfArrow
+ }
+ //variable to catch total arrow weight
+ var finalArrowWeight =arrowWeightTotal(arrowLength,arrowWeight,arrowHeadWeight);
+
+ //Let user know total arrow weight
+ console.log("The total weight of your arrow is "+finalArrowWeight+" grains");
+
+ //create anon function to find the kinetic energy of your arrow hitting a target
+ var calcVelocity = function(weight,speed,constant){
+     var velocity=weight*(speed*speed)*constant
+     return velocity
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

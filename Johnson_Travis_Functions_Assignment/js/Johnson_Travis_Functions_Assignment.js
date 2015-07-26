@@ -1,0 +1,98 @@
+
+ /*
+Travis Johnson
+Section 00
+07/25/15
+Johnson Travis Functions Assignment
+ */
+
+
+//alert("Testing");
+
+ /*
+ This calculator will give you the kinetic energy of you arrow when it hits its target, for an arrow, the kinetic energy is calculated by taking the weight in grains, multiplying it by the square of the speed in feet per second, and dividing by the constant 450800.
+  */
+
+ //inform user and user prompt for parts of the arrow to find weight
+ alert("This calculator will find kinetic energy of your arrow. To find this you must have the weight of your arrow in grams per inch, and whatever arrow head you will be using. This calculation also requires the speed of the bow, we will use the manufacturer bow speed.");
+
+ var arrowLength=prompt("What is the length of your arrow in inches?");
+ while(arrowLength==="" || isNaN(arrowLength)){
+     if(arrowLength ===""){
+         arrowLength=prompt("Please do not leave blank. What is the length of the arrow in inches?");
+     }else{
+         arrowLength=prompt("Please only enter a number. What is the length of the arrow in inches?");
+     }
+
+ }
+
+ //number cast
+arrowLength=Number(arrowLength);
+
+ var arrowWeight=prompt("What is the weight of your arrow in grams per inch?");
+ while(arrowWeight==="" ||isNaN(arrowWeight)){
+     if(arrowWeight===""){
+         arrowWeight=prompt("Please do not leave blank. What is the weight of your arrow in grams per inch?");
+
+     }else{
+         arrowWeight=prompt("Please only enter a number. What is the weight of your arrow in grams per inch?");
+     }
+
+ }
+
+ //number cast
+ arrowWeight=Number(arrowWeight);
+
+ var arrowHeadWeight=prompt("What is the weight of the arrow head in grams?");
+ while(arrowHeadWeight===""||isNaN(arrowHeadWeight)){
+     if(arrowHeadWeight===""){
+         arrowHeadWeight=prompt("Please do not leave blank. What is the weight of the arrow head in grams?");
+     }else{
+         arrowHeadWeight=prompt("Please only enter a number. What is the weight of the arrow head in grams?");
+     }
+ }
+
+ //number cast
+ arrowHeadWeight=Number(arrowHeadWeight);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //prompt for manufacturer bow speed
+ var manufactBowspeed=prompt("What is the manufacturer rated speed for your bow?");
+ while(manufactBowspeed==="" || isNaN(manufactBowspeed)){
+     if(manufactBowspeed===""){
+         manufactBowspeed=prompt("Please do not leave blank. What is the manufacturer rated speed for your bow?");
+     }else{
+         manufactBowspeed=prompt("Please only enter a number.What is the manufacturer rated speed for your bow?");
+     }
+ }
+
+ //number cast
+ manufactBowspeed=Number(manufactBowspeed);
+
+
+
+
+
+
+
+
+
+
+
+
